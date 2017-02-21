@@ -4,7 +4,16 @@
     "repositoryName": "blogs",
     "branch": "master"
   },
+  "site": {},
+  "socialnetwork": {
+    "email": "sandesh3008@gmail.com",
+    "twitter": "https://twitter.com/sandesh3008",
+    "googleplus": "https://plus.google.com/u/0/+SandeshKumarSingh",
+    "linkedin": "https://www.linkedin.com/in/sandesh-kumar-singh-83769744",
+    "facebook": "https://www.facebook.com/meetsandesh",
+    "github": "https://meetsandesh.github.io"
+  },
   "theme": {
-    "name": "Casper"
+    "name": "casper"
   }
 }
