@@ -4,7 +4,11 @@
     "repositoryName": "blogs",
     "branch": "master"
   },
-  "site": {},
+  "site": {
+    "title": "Programming and Technology",
+    "description": "This blog is only concerned about #Programming and #Technology",
+    "cover": "http://meetsandesh.github.io/blogs/images/coverpic.jpg"
+  },
   "socialnetwork": {
     "email": "sandesh3008@gmail.com",
     "twitter": "https://twitter.com/sandesh3008",
