@@ -118,7 +118,7 @@ Final Code will look like as follows -
 
 And to use it -
 
-```HTML
+```javascript
 <html>
     <body>
         <div id="applyPlugin"></div>
