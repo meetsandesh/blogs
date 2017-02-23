@@ -37,7 +37,7 @@ Now, lets set the goal of the plugin. Well, if you are creating a plugin then it
 * toggle italics
 
 
-Lets talk about providing customization to the user (_the developers who will use your plugin_). Assume that you are generating a static _Hello World_ without using any styling, then it will work for those who are not concerned with styling; but for those who want _Hello World_ to printed in **Red* color and in **Italics** then your plugin is a waste for them. So, remember this, always create a plugins which is highly customizable from outside which we call settings.
+Lets talk about providing customization to the user (_the developers who will use your plugin_). Assume that you are generating a static _Hello World_ without using any styling, then it will work for those who are not concerned with styling; but for those who want _Hello World_ to printed in **Red** color and in **Italics** then your plugin is a waste for them. So, remember this, always create a plugins which is highly customizable from outside which we call settings.
 
 So our new code looks like below - 
 
@@ -47,6 +47,7 @@ So our new code looks like below -
     $.fn.myPlugin = function(options){
         this.settings = $.extend({
             //these settings are the defaults, you can override them while applying the plugin
+            text: 'Hello World',
             defaultColor: '#230067',
             defaultBgColor: '#556b2f'
         }, options );
