@@ -4,8 +4,8 @@
         this.settings = $.extend({
             //these settings are the defaults, you can override them while applying the plugin
             text: 'Hello World',
-            defaultColor: '#230067',
-            defaultBgColor: '#556b2f'
+            defaultColor: '#568923',
+            defaultBgColor: '#AA56BB'
         }, options );
         var attributes=this.settings;
         var element=$(this);
