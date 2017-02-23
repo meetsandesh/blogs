@@ -118,7 +118,7 @@ Final Code will look like as follows -
 
 And to use it -
 
-```HTML
+```HTMLBars
 <html>
     <body>
         <div id="applyPlugin"></div>
@@ -132,7 +132,7 @@ And to use it -
 
 The above snippet will show _Hello World_ with default text colors and background colors. But if you want to change default settings, then you can override it as follows -
 
-```HTML
+```HTMLBars
 <html>
     <body>
         <div id="applyPlugin"></div>
@@ -148,7 +148,7 @@ The above snippet will show _Hello World_ with default text colors and backgroun
 
 ```
 
-I have created working [example](https://meetsandesh.github.io/blogs/_staticPages/2017-02-24-Creating-custom-plugin-using-jQuery-example/html/index.html) for your reference.
+I have created working [example](https://meetsandesh.github.io/blogs/_staticPages/2017-02-24-Creating-custom-plugin-using-jQuery-example/html/2017-02-24-Creating-custom-plugin-using-jQuery-example.html) for your reference.
 
 Thank you, and stay tuned for new tutorials.
 
