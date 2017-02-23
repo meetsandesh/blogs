@@ -118,6 +118,7 @@ Final Code will look like as follows -
 
 And to use it -
 
+<div class="htghlight">
 ```HTML
 <html>
     <body>
@@ -128,10 +129,11 @@ And to use it -
     <body>
 </html>
 ```
+</div>
 
 The above snippet will show _Hello World_ with default text colors and background colors. But if you want to change default settings, then you can override it as follows -
 
-<pre class="htghlight">
+<div class="htghlight">
 ```HTML
 <html>
     <body>
@@ -146,7 +148,7 @@ The above snippet will show _Hello World_ with default text colors and backgroun
     <body>
 </html>
 ```
-</pre>
+</div>
 
 I have created working [example](https://meetsandesh.github.io/blogs/staticPages/Creating-custom-plugin-using-jQuery-example/plugin-using-jQuery-example.html) for your reference.
 
