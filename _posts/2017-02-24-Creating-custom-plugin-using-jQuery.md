@@ -118,7 +118,7 @@ Final Code will look like as follows -
 
 And to use it -
 
---HTML
+```HTML
 <html>
     <body>
         <div id="applyPlugin"></div>
@@ -127,11 +127,11 @@ And to use it -
         </script>
     <body>
 </html>
---
+```
 
 The above snippet will show _Hello World_ with default text colors and background colors. But if you want to change default settings, then you can override it as follows -
 
-```XML
+```HTML
 <html>
     <body>
         <div id="applyPlugin"></div>
