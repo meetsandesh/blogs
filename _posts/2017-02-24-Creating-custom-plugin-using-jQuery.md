@@ -148,7 +148,7 @@ The above snippet will show _Hello World_ with default text colors and backgroun
 
 ```
 
-I have created working [example](https://meetsandesh.github.io/blogs/_staticPages/2017-02-24-Creating-custom-plugin-using-jQuery-example/html/2017-02-24-Creating-custom-plugin-using-jQuery-example.html) for your reference.
+I have created working [example](https://meetsandesh.github.io/blogs/staticPages/Creating-custom-plugin-using-jQuery-example/plugin-using-jQuery-example.html) for your reference.
 
 Thank you, and stay tuned for new tutorials.
 
