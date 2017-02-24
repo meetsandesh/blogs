@@ -205,14 +205,17 @@ So, Final Code will look like as follows -
             },
             _bindActions: function(){
                 element.find('#myPlugin_colour').on("click",function(){
+                    //code for changing text color
                     var nextColor=listOfMethods._generateRandomColor();
                     element.find('#myPlugin_text').css('color',nextColor);
                 });
                 element.find('#myPlugin_bg_colour').on("click",function(){
+                    //code for changing background 
                     var nextBgColor=listOfMethods._generateRandomColor();
                     element.find('#myPlugin_text').css('background-color',nextBgColor);
                 });
                 element.find('#myPlugin_italics').on("change",function(){
+                    //code for italcis effect
                     var htmlContent=attributes.text;
                     if(this.checked){
                         var htmlContent='<em>'+attributes.text+'</em>';
