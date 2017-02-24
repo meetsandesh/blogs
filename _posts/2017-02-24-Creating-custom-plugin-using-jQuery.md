@@ -159,7 +159,7 @@ Now, if you press any button/ check or uncheck a text box, nothing will happen; 
                     //code for changing background 
                 });
                 element.find('#myPlugin_italics').on("change",function(){
-                    //code for italcis effect
+                    //code for italics effect
                 });
             },
             _init: function(){
@@ -215,7 +215,7 @@ So, Final Code will look like as follows -
                     element.find('#myPlugin_text').css('background-color',nextBgColor);
                 });
                 element.find('#myPlugin_italics').on("change",function(){
-                    //code for italcis effect
+                    //code for italics effect
                     var htmlContent=attributes.text;
                     if(this.checked){
                         var htmlContent='<em>'+attributes.text+'</em>';
