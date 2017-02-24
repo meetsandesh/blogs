@@ -123,7 +123,7 @@ Now, lets create content -
 }( jQuery ));
 ```
 
-As you can see, we created **_bindContent()** function and pasted the required content in the DOM.
+As you can see, we created **bindContent()** function and pasted the required content in the DOM.
 
 Now, if you press any button/ check or uncheck a text box, nothing will happen; so, lets bind functionality with them.
 
@@ -174,7 +174,9 @@ Now, if you press any button/ check or uncheck a text box, nothing will happen; 
 }( jQuery ));
 ```
 
-Here, I have created **_bindActions()** function in order to bind fnctionalities in the plugin, and used it after using **_bindContent()**.Lets create another function to generate random colors in **_#rrggbb_** format and name it **_generateRandomColor()**.
+Here, I have created **_bindActions()** function in order to bind fnctionalities in the plugin, and used it after binding the html client.
+
+Lets create another function to generate random colors in **_#rrggbb_** format and name it **_generateRandomColor()**.
 
 So, Final Code will look like as follows -
 ```javascript
