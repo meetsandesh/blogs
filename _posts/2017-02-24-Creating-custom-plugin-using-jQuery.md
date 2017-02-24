@@ -152,7 +152,7 @@ And to use it -
         <script>
             $('#applyPlugin').myPlugin();
         </script>
-    <body>
+    </body>
 </html>
 ```
 
@@ -169,7 +169,7 @@ The above snippet will show _Hello World_ with default text colors and backgroun
                 defaultBgColor: '#556b2f' //your custom background color
             });
         </script>
-    <body>
+    </body>
 </html>
 ```
 
