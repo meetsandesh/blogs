@@ -70,8 +70,7 @@ Here, I have written **this.settings** this is to make sure that **settings** is
         var element=$(this);
         this.methods={
             _init: function(){
-                listOfMethods._bindContent();
-                listOfMethods._bindActions();
+            
             }
         };
         var listOfMethods=this.methods;
@@ -80,6 +79,51 @@ Here, I have written **this.settings** this is to make sure that **settings** is
     };
 }( jQuery ));
 ```
+
+Few things to notice here -
+* **this.methods** is used again to make this variable available outside of the plugin.
+* before **return** statement, **listOfMethods._init();** is written in order to initialize the plugin before returning.
+* **return** statement is written in order to make chaining available after _program control_ has returned from the plugin. 
+* **element** variable gives the div/element of HTML on which your plugin is being applied. 
+
+Now, lets create content -
+
+```javascript
+(function ( $ ) {
+    //all of your plugins go here
+    $.fn.myPlugin = function(options){
+        this.settings = $.extend({
+            //these settings are the defaults, you can override them while applying the plugin
+            text: 'Hello World',
+            defaultColor: '#568923',
+            defaultBgColor: '#AA56BB'
+        }, options );
+        var attributes=this.settings;
+        var element=$(this);
+        this.methods={
+            _bindContent: function(){
+                var htmlContent=    '<div id="myPlugin_content">'+
+                                        '<div id="myPlugin_text" style="color: '+attributes.defaultColor+'; background-color: '+attributes.defaultBgColor+'">'+
+                                            attributes.text+
+                                        '</div>'+
+                                        '<input type="checkbox" id="myPlugin_italics" name="myPlugin_italics">Show in Italics<br>'+
+                                        '<button id="myPlugin_colour">Change Text Colour</button>'+
+                                        '<button id="myPlugin_bg_colour">Change Background Colour</button>'+
+                                    '</div>';
+                element.html(htmlContent);
+            },
+            _init: function(){
+                listOfMethods._bindContent();
+            }
+        };
+        var listOfMethods=this.methods;
+        listOfMethods._init();
+        return this;
+    };
+}( jQuery ));
+```
+
+As you can see, we created **_bindContent()** function and pasted content in the html DOM.  
 
 Final Code will look like as follows -
 ```javascript
