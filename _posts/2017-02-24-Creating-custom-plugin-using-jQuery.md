@@ -28,10 +28,11 @@ Now, lets name our plugin. Let it be _myPlugin_ . So our code looks like below -
 }( jQuery ));
 ```
 
-Now, lets set the goal of the plugin. Well, if you are creating a plugin then it must do something. So our plugin will print _Hello World_ and will contain three buttons with following jobs - 
+Now, lets set the goal of the plugin. Well, if you are creating a plugin then it must do something. So our plugin will print _Hello World_ and will contain two buttons with following jobs - 
 
 * change text color
 * change backgound color
+and a checkbox which will
 * toggle italics
 
 
@@ -52,7 +53,33 @@ So our new code looks like below -
     };
 }( jQuery ));
 ```
-FURTHER EXPLAINING
+
+Here, I have written **this.settings** this is to make sure that **settings** is available outside of the plugin. Now, lets create initialization function.
+
+```javascript
+(function ( $ ) {
+    //all of your plugins go here
+    $.fn.myPlugin = function(options){
+        this.settings = $.extend({
+            //these settings are the defaults, you can override them while applying the plugin
+            text: 'Hello World',
+            defaultColor: '#230067',
+            defaultBgColor: '#556b2f'
+        }, options );
+        var attributes=this.settings;
+        var element=$(this);
+        this.methods={
+            _init: function(){
+                listOfMethods._bindContent();
+                listOfMethods._bindActions();
+            }
+        };
+        var listOfMethods=this.methods;
+        listOfMethods._init();
+        return this;
+    };
+}( jQuery ));
+```
 
 Final Code will look like as follows -
 ```javascript
