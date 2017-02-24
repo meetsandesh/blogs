@@ -123,9 +123,60 @@ Now, lets create content -
 }( jQuery ));
 ```
 
-As you can see, we created **_bindContent()** function and pasted content in the html DOM.  
+As you can see, we created **_bindContent()** function and pasted the required content in the DOM.
 
-Final Code will look like as follows -
+Now, if you press any button/ check or uncheck a text box, nothing will happen; so, lets bind functionality with them.
+
+```javascript
+(function ( $ ) {
+    //all of your plugins go here
+    $.fn.myPlugin = function(options){
+        this.settings = $.extend({
+            //these settings are the defaults, you can override them while applying the plugin
+            text: 'Hello World',
+            defaultColor: '#568923',
+            defaultBgColor: '#AA56BB'
+        }, options );
+        var attributes=this.settings;
+        var element=$(this);
+        this.methods={
+            _bindContent: function(){
+                var htmlContent=    '<div id="myPlugin_content">'+
+                                        '<div id="myPlugin_text" style="color: '+attributes.defaultColor+'; background-color: '+attributes.defaultBgColor+'">'+
+                                            attributes.text+
+                                        '</div>'+
+                                        '<input type="checkbox" id="myPlugin_italics" name="myPlugin_italics">Show in Italics<br>'+
+                                        '<button id="myPlugin_colour">Change Text Colour</button>'+
+                                        '<button id="myPlugin_bg_colour">Change Background Colour</button>'+
+                                    '</div>';
+                element.html(htmlContent);
+            },
+            _bindActions: function(){
+                element.find('#myPlugin_colour').on("click",function(){
+                    //code for changing text color
+                });
+                element.find('#myPlugin_bg_colour').on("click",function(){
+                    //code for changing background 
+                });
+                element.find('#myPlugin_italics').on("change",function(){
+                    //code for italcis effect
+                });
+            },
+            _init: function(){
+                listOfMethods._bindContent();
+                listOfMethods._bindActions();
+            }
+        };
+        var listOfMethods=this.methods;
+        listOfMethods._init();
+        return this;
+    };
+}( jQuery ));
+```
+
+Here, I have created **_bindActions()** function in order to bind fnctionalities in the plugin, and used it after using **_bindContent()**.Lets create another function to generate random colors in **_#rrggbb_** format and name it **_generateRandomColor()**.
+
+So, Final Code will look like as follows -
 ```javascript
 (function ( $ ) {
     //all of your plugins go here
