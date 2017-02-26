@@ -12,3 +12,6 @@ Now, without further adieu, following are the list of problems that i solved.
 **EASY -**
 
 * [Onboarding](https://meetsandesh.github.io/blogs/Codingame-Onboarding/)
+* [Power of Thor - Episode 1](https://meetsandesh.github.io/blogs/Codingame-Power-of-Thor-Episode-1/)
+* [Horse Racing Duals](https://meetsandesh.github.io/blogs/Codingame-Horse-racing-Duals/)
+* [Defibrillators](https://meetsandesh.github.io/blogs/Codingame-Defibrillators/)
