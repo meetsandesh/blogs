@@ -2,6 +2,7 @@
 layout: post
 title: Codingame - Easy - Onboarding!
 ---
+![Onborading](https://meetsandesh.github.io/blogs/images/Onboarding.png "Onborading")
 
 Hello, there!
 
