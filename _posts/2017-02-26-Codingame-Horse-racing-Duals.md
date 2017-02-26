@@ -5,7 +5,7 @@ title: Codingame - Easy - Horse Racing Duals!
 
 Hello, there!
 
-Following is the code in Java the easy problem - **_Horse Racing Duals_**.
+Following is the code in Java for the easy problem - **_Horse Racing Duals_**.
 
 ```java
 import java.util.*;

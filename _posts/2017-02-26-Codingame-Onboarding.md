@@ -6,7 +6,7 @@ title: Codingame - Easy - Onboarding!
 
 Hello, there!
 
-Following is the code in Java the easy problem - **_Onboarding_**.
+Following is the code in Java for the easy problem - **_Onboarding_**.
 
 ```java
 import java.util.*;

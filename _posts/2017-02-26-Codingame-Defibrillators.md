@@ -5,7 +5,7 @@ title: Codingame - Easy - Defibrillators!
 
 Hello, there!
 
-Following is the code in Java the easy problem - **_Defibrillators_**.
+Following is the code in Java for the easy problem - **_Defibrillators_**.
 
 ```java
 import java.util.*;

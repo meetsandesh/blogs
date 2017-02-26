@@ -6,7 +6,7 @@ title: Codingame - Easy - Power of Thor - Episode 1!
 
 Hello, there!
 
-Following is the code in Java the easy problem - **_Power of Thor - Episode 1_**.
+Following is the code in Java for the easy problem - **_Power of Thor - Episode 1_**.
 
 ```java
 import java.util.*;
