@@ -37,8 +37,6 @@ class Solution {
             double x = (longitudeDefib - longitudeUser)*Math.cos((latitudeUser+latitudeDefib)/2);
             double y = (latitudeDefib - latitudeUser);
             double d = (Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)))*6371;
-            System.err.println(defib);
-            //System.err.println("min:"+distance+" current:"+d);
             if (d < distance) {
                 distance = d;
                 answer = defib.split(";")[1];
